@@ -1,12 +1,14 @@
 import React from "react";
-
-function About() {
+import User from "../data/User";
+import App from './App'
+import Links from "./Links";
+function About(props) {
   return (
     <div id="about">
-      <h2>About Me</h2>
-      <p>Put the bio in here</p>
+      <h2>{props.bio}</h2>
+      <p></p>
       <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
-      {/* add your <Links /> component here */}
+      <Links />
     </div>
   );
 }
